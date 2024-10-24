@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 64px;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #5C5C5C;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+header a img{
+    width: 32px;
+    height: 32px;
+}
+
+header a h1 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #1F1F1F;
+}
+
+header a:hover {
+    color: #1F1F1F;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+main {
+    flex: 1;
+    background-color: #000000;
+    border-radius: 4px 4px 24px 24px;
+    display: flex;
+    gap: 16px;
+    padding: 24px 64px;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.user {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 32px 48px;
+}
+
+.user figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.user figure figcaption {
+    text-align: center;
+}
+
+.user figure figcaption h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1F1F1F;
+}
+
+.user figure figcaption p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #5C5C5C;
+}
+
+.user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.intro ul li {
+    list-style: none;
+}
+
+.intro h4 {
+    border-bottom: 1px solid #F3F4F6;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.intro-item {
+    display: flex;
+    gap: 8px;
+    padding: 16px 8px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.intro-item:hover {
+    background-color: #F3F4F6;
+    cursor: pointer;
+}
+
+.intro-item p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5C5C5C;
+}
+
+.intro-item:hover p {
+    color: #1F1F1F;
+}
+
+.small-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.content-section {
+    flex: 2;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 24px 32px;
+}
+
+.content-section h2 {
+    margin-bottom: 16px;
+}
+
+.content {
+    display: none;
+}
+
+.content:target {
+    display: block;
+}
+
+.content h3 {
+    margin-bottom: 16px;
+}
+
+.content p {
+    color: #5C5C5C;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    padding: 16px;
+    gap: 16px;
+}
+
+footer p {
+    color: #5C5C5C;
+    font-weight: 400;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+
+footer ul li a img {
+    width: 24px;
+    border-radius: 4px;
+}
+
+.details, .map {
+    margin-top: 10px; /* Visible by default */
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+@media (max-width: 920px) {
+    main {
+        flex-direction: column;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container img {
+        height: 500px;
+    }
+}
